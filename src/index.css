@@ -117,3 +117,9 @@ nav {
   position: relative;
   left: 5%;
 }
+
+.btn1 {
+  border: none;
+  background-color: white;
+}
+
