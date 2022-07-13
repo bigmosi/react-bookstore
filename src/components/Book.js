@@ -1,10 +1,17 @@
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import NewBook from './NewBook';
+import { fetchBookApiAction } from '../redux/books/book';
 
 import Form from './Form';
 
 const Book = () => {
   const bookList = useSelector((state) => state.bookReducer);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBookApiAction());
+  }, [dispatch]);
 
   return (
     <>
