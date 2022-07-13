@@ -1,9 +1,9 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { checkStatusAction } from '../redux/categories/categories';
 
 const Categories = () => {
-  const status = useSelector((state) => state.categoriesReducer);
+  const status = useSelector((state) => state.categoriesReducer, shallowEqual);
   const dispatch = useDispatch();
 
   const updateCategories = (e) => {
