@@ -41,6 +41,7 @@ a:visited {
   margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
+  padding-bottom: 5px;
 }
 
 .chapter {
@@ -79,9 +80,17 @@ a:visited {
   color: #fff;
 }
 
+.btn {
+  font-size: 8px;
+  background-color: #0290ff;
+  color: #fff;
+  padding: 3px 14px;
+}
+
 .chapter1 {
-  font-size: 12px;
   color: #b7d0e6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
 }
 
 .new-book {
@@ -92,11 +101,19 @@ a:visited {
 
 .status {
   margin-top: 40px;
+  display: flex;
+}
+
+.complete {
+  margin-top: -15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
 }
 
 nav {
   display: flex;
   background-color: #fff;
+  padding-top: 10px;
 }
 
 .justifyContent {
@@ -118,7 +135,46 @@ nav {
   left: 5%;
 }
 
+.circle-bar {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 100px;
+  border-top-color: #469ae7;
+  border-image-slice: 1;
+  border-right-color: #469ae7;
+  border-left-color: #dcdbdc;
+  border-bottom-color: #469ae7;
+}
+
+.circle {
+  display: flex;
+  justify-content: space-between;
+  width: 5vw;
+}
+
 .btn1 {
   border: none;
   background-color: white;
+}
+
+.percent {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.category {
+  position: relative;
+  left: 15%;
+  margin-top: 30px;
+}
+
+.text-5 {
+  color: #9c9c9c;
+  font-size: 1.2rem;
+}
+
+.btn-sm {
+  margin-left: 25px;
 }
