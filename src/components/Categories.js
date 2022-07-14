@@ -12,7 +12,7 @@ const Categories = () => {
   };
   return (
     <>
-      <div>
+      <div className="category">
         <button type="button" className="btn btn-primary" onClick={updateCategories}>
           Check Status
         </button>

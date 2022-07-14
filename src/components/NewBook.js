@@ -13,6 +13,7 @@ const NewBook = ({ book }) => {
     <>
       <div className="d-flex justify-content-around width bg-white">
         <div>
+          <p className="m-0 px-0 pt-3 pb-1 text-1">Action</p>
           <h4 className="title">{title}</h4>
           <p className="author">{author}</p>
           <div className="d-flex align-items-center justify-content-start m-0 p-0">
@@ -22,15 +23,20 @@ const NewBook = ({ book }) => {
           </div>
         </div>
         <div className="status">
-          <p>64%</p>
-          <p>completed</p>
+          <div className="circle">
+            <div className="circle-bar" />
+          </div>
+          <div>
+            <p className="percent">94%</p>
+            <p className="complete">completed</p>
+          </div>
         </div>
         <div className="chapter">
           <p className="chapter1">CURRENT CHAPTER</p>
           <p>chapter</p>
-          <div>
-            <input className="btn btn-1 btn-primary btn-sm" type="button" value="UPDATE PROGRESS" />
-          </div>
+          <button type="button" className="btn btn-primary btn-sm">
+            UPDATE PROGRESS
+          </button>
         </div>
       </div>
     </>
