@@ -1,5 +1,4 @@
 import { Outlet, Link } from 'react-router-dom';
-// import { IoIosPerson } from 'react-icons/io5';
 
 const NavBar = () => (
   <>

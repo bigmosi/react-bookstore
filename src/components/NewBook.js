@@ -13,6 +13,7 @@ const NewBook = ({ book }) => {
     <>
       <div className="d-flex justify-content-around width bg-white">
         <div>
+          <p className="m-0 px-0 pt-3 pb-1 text-1">Action</p>
           <h4 className="title">{title}</h4>
           <p className="author">{author}</p>
           <div className="d-flex align-items-center justify-content-start m-0 p-0">
